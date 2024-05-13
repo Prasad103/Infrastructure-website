@@ -374,47 +374,87 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in"
-            data-aos-delay="100"></div>
+          <!-- SLIDER Creat start -->
+          <div class="col-lg-6 img-bg" style="position: relative; overflow: hidden;  background-size: cover; background-position: center;" data-aos="zoom-in" data-aos-delay="100">
+            <div class="slider-wrapper" style="display: flex; width: 400%; transition: transform 0.5s ease;">
+                <img src="./assets/img1/safty 1.jpg" alt="Image 1" style="width: 25%;">
+                <img src="./assets/img1/safty 2.jpg" alt="Image 2" style="width: 25%;">
+                <img src="./assets/img1/safty 3.jpg" alt="Image 3" style="width: 25%;">
+                <img src="./assets/img1/safty 4.jpg" alt="Image 4" style="width: 25%;">
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var currentSlide = 0;
+                var slideWidth = document.querySelector('.slider-wrapper img').clientWidth;
+                var totalSlides = document.querySelectorAll('.slider-wrapper img').length;
+                var sliderWrapper = document.querySelector('.slider-wrapper');
+        
+                function nextSlide() {
+                    if (currentSlide < totalSlides - 1) {
+                        currentSlide++;
+                    } else {
+                        currentSlide = 0;
+                    }
+                    updateSlider();
+                }
+        
+                function updateSlider() {
+                    var newMargin = -currentSlide * slideWidth;
+                    sliderWrapper.style.transform = 'translateX(' + newMargin + 'px)';
+                }
+        
+                setInterval(nextSlide, 3000); // Change slide every 3 seconds
+            });
+        </script>
+        
+        
+          <!-- SLIDER Creat end -->
+          <!-- <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in"
+            data-aos-delay="100"></div> -->
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Growing Together, Achieving Greatness</h3>
-            <p>Join us at CCP Infrastructure as we grow together, reaching new heights of success and achievement
-              through collaboration and dedication.</p>
+            <div class="section-header">
+              <h2>Our Safety</h2>
+            </div>
+            <h3>Safety and Training: Our Commitment to Employee Well-being</h3>
+            <p>At CCP Infrastructure, we prioritize safety through comprehensive measures and training, ensuring a
+              secure work environment for all.</p>
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
               <i class="bi bi-easel flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Collaborative Environment</a></h4>
-                <p>Foster a culture of teamwork and collaboration where employees support and learn from each other,
-                  contributing to collective growth and success.</p>
+                <h4><a href="" class="stretched-link">Rigorous Safety Protocols</a></h4>
+                <p>Implementing strict safety guidelines and protocols to minimize workplace hazards and ensure employee
+                  well-being.</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-patch-check flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Continuous Learning</a></h4>
-                <p>Encourage professional development and lifelong learning opportunities to empower employees to grow
-                  their skills and knowledge.</p>
+                <h4><a href="" class="stretched-link">Continuous Training Programs</a></h4>
+                <p>Providing regular safety training sessions to equip employees with the knowledge and skills to
+                  identify risks and respond effectively in emergencies.</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-brightness-high flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Goal Setting and Achievement</a></h4>
-                <p>Set clear goals and objectives for both individual and team performance, providing opportunities for
-                  employees to challenge themselves and achieve greatness.</p>
+                <h4><a href="" class="stretched-link">Safety Culture Promotion</a></h4>
+                <p>Fostering a culture of safety where employees are encouraged to prioritize safety in all aspects of
+                  their work and actively participate in safety initiatives.</p>
               </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-brightness-high flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Building Relationships</a></h4>
-                <p>Encourage employees to build strong relationships and networks both internally and externally,
-                  leveraging connections to support growth and achieve common goals.</p>
+                <h4><a href="" class="stretched-link">Compliance with Regulations</a></h4>
+                <p>Ensuring full compliance with industry regulations and standards to maintain a safe and healthy work
+                  environment and mitigate legal risks.</p>
               </div>
             </div><!-- End Icon Box -->
 
@@ -998,7 +1038,9 @@
     End Recent Blog Posts Section -->
       <section style="padding: 50px 0; background-color: #f9f9f9;">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-          <h2>Our Clients</h2>
+          <div class="section-header">
+            <h2>Our Clients</h2>
+          </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); grid-gap: 20px;">
             <div style="text-align: center;">
               <img src="./assets/img1/l&t logo.png" alt="Client 1 Logo" style="max-width: 100%; height: auto;">
@@ -1007,16 +1049,10 @@
               <img src="./assets/img1/JSW logo.png" alt="Client 2 Logo" style="max-width: 100%; height: auto;">
             </div>
             <div style="text-align: center;">
-              <img src="./assets/img1/design 3.jpg" alt="Client 3 Logo" style="max-width: 100%; height: auto;">
+              <img src="./assets/img1/l&t logo.png" alt="Client 1 Logo" style="max-width: 100%; height: auto;">
             </div>
             <div style="text-align: center;">
-              <img src="./assets/img1/design 3.jpg" alt="Client 4 Logo" style="max-width: 100%; height: auto;">
-            </div>
-            <div style="text-align: center;">
-              <img src="./assets/img1/design 3.jpg" alt="Client 5 Logo" style="max-width: 100%; height: auto;">
-            </div>
-            <div style="text-align: center;">
-              <img src="./assets/img1/design 3.jpg" alt="Client 6 Logo" style="max-width: 100%; height: auto;">
+              <img src="./assets/img1/JSW logo.png" alt="Client 2 Logo" style="max-width: 100%; height: auto;">
             </div>
             <!-- Add more client logos as needed -->
           </div>
