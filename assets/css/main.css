@@ -265,7 +265,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 100px;
   margin-right: 6px;
 }
 
@@ -286,7 +286,7 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
-    padding: 0;
+    padding-bottom: 80px;
   }
 
   .navbar ul {
