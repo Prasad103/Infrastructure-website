@@ -1274,7 +1274,6 @@ section {
 
 @media (min-width: 992px) {
   .about .about-img {
-    position: absolute;
     top: 0;
     right: 0;
   }
