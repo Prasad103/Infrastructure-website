@@ -2738,3 +2738,30 @@ section {
   margin-bottom: 10px;
 }
 /* sOCIAL WORK SLIDER END  */
+
+/* banner slider start  */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+      font-size: 2rem;
+  }
+
+  .carousel-caption p {
+      font-size: 1rem;
+  }
+}
+/* banner slider end */
