@@ -2696,3 +2696,45 @@ section {
 .g-4, .gx-4 {
   --bs-gutter-x: 0.1rem;
 }
+
+
+/* Social work slider START */
+.categories-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.prices {
+  display: flex;
+  align-items: baseline;
+}
+
+.offer_price {
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: red;
+}
+
+.buy_btn {
+  margin-top: 10px;
+}
+
+.gst {
+  margin-top: 10px;
+}
+
+.categories-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* sOCIAL WORK SLIDER END  */

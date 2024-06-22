@@ -30,7 +30,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+<!-- SOCIAL WORK START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+<!-- WOW.js CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -383,6 +387,42 @@
         </div>
       </div>
     </section><!-- End Services Section -->
+    <!-- Social Work start  -->
+    <div class="container-fluid categories py-5 text-center">
+      <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 10px; width: 80%; text-align: center;">
+          <h1 style="grid-column: 1 / -1;">
+              <span style="color: rgb(233, 57, 13);">Social</span><span  style="color: rgb(71, 69, 4);"> Work </span>
+          </h1>
+          <p style="grid-column: 1 / -1;" class="text-center">
+              In a bid to enhance community health and safety, CPP Infrastructure has donated an ambulance for public use, ensuring timely emergency medical services and saving lives in critical times.
+          </p>
+      </div>
+      <div class="container py-5 pt-3">
+          <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+              <!-- First AMC Package Card -->
+              <div class="categories-item p-4">
+                  <div class="categories-item-inner">
+                      <img src="./assets/img1/CPp Proect/Social Work/IMG-20240621-WA0002.jpg" alt="Silver Package">
+                  </div>
+              </div>
+
+              <!-- Second AMC Package Card -->
+              <div class="categories-item p-4">
+                  <div class="categories-item-inner">
+                      <img src="./assets/img1/CPp Proect/Social Work/IMG-20240621-WA0003.jpg" alt="Gold Package">
+                  </div>
+              </div>
+
+              <!-- Third AMC Package Card -->
+              <div class="categories-item p-4">
+                  <div class="categories-item-inner">
+                      <img src="./assets/img1/CPp Proect/Social Work/IMG-20240621-WA0004.jpg" alt="Platinum Package">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- Social working end -->
     <!-- ======= Our Safety ======= -->
     <section id="alt-services" class="alt-services">
       <div class="container" data-aos="fade-up">
@@ -767,7 +807,44 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Social Work slide scripts start -->
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+   <!-- Owl Carousel JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   
+   <!-- WOW.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   
+   <script>
+       $(document).ready(function() {
+           // Initialize Owl Carousel
+           $('.categories-carousel').owlCarousel({
+               loop: true,
+               margin: 10,
+               nav: true,
+               autoplay: true, // Enable autoplay
+               autoplayTimeout: 3000, // Time between slides in milliseconds
+               autoplayHoverPause: true, // Pause on hover
+               responsive: {
+                   0: {
+                       items: 1
+                   },
+                   600: {
+                       items: 2
+                   },
+                   1000: {
+                       items: 3
+                   }
+               }
+           });
 
+           // Initialize WOW.js
+           new WOW().init();
+       });
+   </script>
+  <!-- Social Work slide scripts end -->
 </body>
 
 </html>
