@@ -1863,7 +1863,7 @@ section {
 
 .hero .carousel {
   width: 100%;
-  min-height: 100vh;
+  min-height: 300px;
   padding: 0px 0;
   margin: 0;
   position: relative;
@@ -1927,7 +1927,43 @@ section {
     font-size: 36px;
   }
 }
+@media (max-width: 768px) {
+  .hero .info h2 {
+    font-size: 30px;
+  }
+  .hero .info p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+  }
 
+}
+
+@media (max-width: 768px) {
+  #bannerlogo {
+    height: 50px;
+  }
+/* ========= */
+@media (max-width: 660px) {
+  .hero .info h2 {
+    font-size: 24px;
+  }
+  @media (max-width: 660px) {
+    #bannerpara {
+      font-size: 10px;
+    }
+
+}
+/* ============== */
+@media (max-width: 564px) {
+  .hero .info h2 {
+    font-size: 16px;
+  }
+  @media (max-width: 660px) {
+    #bannerpara {
+      font-size: 10px;
+    }
+
+}
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
@@ -2738,56 +2774,3 @@ section {
   margin-bottom: 10px;
 }
 /* sOCIAL WORK SLIDER END  */
-
-/* banner slider start  */
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: left;
-}
-
-.carousel-caption h1 {
-  font-size: 3rem;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-      font-size: 2rem;
-  }
-
-  .carousel-caption p {
-      font-size: 1rem;
-  }
-}
-
-@media (max-width: 610px) {
-  #heading {
-      font-size: 14px;
-  }
-
-  #paraheading {
-      font-size: 8px;
-  }
-}
-@media (max-width: 430px) {
-  #heading {
-      font-size: 10px;
-      
-  }
-
-  #paraheading {
-      font-size: 6px;
-  }
-}
-
-@media (max-width: 570px) {
-  #get-started {
-      display: none;
-  }
-}
-/* banner slider end */
