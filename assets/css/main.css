@@ -2764,4 +2764,30 @@ section {
       font-size: 1rem;
   }
 }
+
+@media (max-width: 610px) {
+  #heading {
+      font-size: 14px;
+  }
+
+  #paraheading {
+      font-size: 8px;
+  }
+}
+@media (max-width: 430px) {
+  #heading {
+      font-size: 10px;
+      
+  }
+
+  #paraheading {
+      font-size: 6px;
+  }
+}
+
+@media (max-width: 570px) {
+  #get-started {
+      display: none;
+  }
+}
 /* banner slider end */
